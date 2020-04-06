@@ -1,2 +1,2 @@
-# cardatabase
-A car database management application.
+# Car Database
+A car database management backend application.
