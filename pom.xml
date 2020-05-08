@@ -11,9 +11,9 @@
 	<groupId>com.spring-react</groupId>
 	<artifactId>cardatabase</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>cardatabase</name>
-	<description>A project built using Spring Boot and React</description>
+	<description>A Spring BootProject</description>
 
 	<properties>
 		<java.version>1.8</java.version>
