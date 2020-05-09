@@ -1,1 +1,0 @@
-web: java -jar target/cardatabase-1.0.0.jar
