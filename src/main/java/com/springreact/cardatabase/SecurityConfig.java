@@ -1,6 +1,7 @@
 package com.springreact.cardatabase;
 
 import com.springreact.cardatabase.service.UserDetailsServiceImpl;
+import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,6 +24,7 @@ import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
+@EnableEncryptableProperties
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -35,6 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        http.cors().and().authorizeRequests().antMatchers(HttpMethod.GET, "/").permitAll();
         http.csrf()
                 .disable()
                 .cors()
