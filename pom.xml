@@ -13,7 +13,7 @@
 	<version>1.0.0</version>
 	<name>cardatabase</name>
 
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<description>A Spring BootProject</description>
 
 	<properties>
