@@ -1,6 +1,7 @@
 package com.springreact.cardatabase;
 
 import com.springreact.cardatabase.service.UserDetailsServiceImpl;
+import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,6 +24,7 @@ import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
+@EnableEncryptableProperties
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
